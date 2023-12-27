@@ -11,5 +11,7 @@ package FNAF;
  * @author Ezra
  */
 public class CloseDoor {
-    
+    public String getName(){
+        
+    }
 }

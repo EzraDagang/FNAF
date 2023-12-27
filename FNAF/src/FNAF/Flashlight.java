@@ -11,5 +11,7 @@ package FNAF;
  * @author Ezra
  */
 public class Flashlight {
-    
+    public String getName(){
+        
+    }
 }

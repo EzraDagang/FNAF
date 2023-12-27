@@ -11,7 +11,11 @@ package FNAF;
  * @author Ezra
  */
 public class Equipment {
-    public Equipment[] createEquipment(){
+    public Equipment[] createEquipment(Flashlight f, CloseDoor c){
+        
+    }
+    
+    public void equipmentList(){
         
     }
 }

@@ -11,5 +11,11 @@ package FNAF;
  * @author Ezra
  */
 public class Monster {
+    public void useUniqueAbility(){
+        
+    }
     
+    public int getBatteryReduction(){
+        return 1; 
+    }
 }

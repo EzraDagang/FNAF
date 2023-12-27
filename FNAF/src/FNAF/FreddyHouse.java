@@ -11,5 +11,11 @@ package FNAF;
  * @author Ezra
  */
 public class FreddyHouse {
+    public Monster[] createMonster(){
+        
+    }
     
+    public void printMonsterAndAbilities(){
+        
+    }
 }

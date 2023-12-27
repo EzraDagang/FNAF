@@ -11,5 +11,7 @@ package FNAF;
  * @author Ezra
  */
 public class Character {
-    
+    public boolean useEquipment (String equipmentName, Monster monster){
+        
+    }
 }
