@@ -10,9 +10,12 @@ public class Main {
         FreddyHouse freddyHouse = new FreddyHouse(8);
         Monster[] monsList = freddyHouse.createMonster();
         freddyHouse.printMonsterAndAbilities();
+        surviveTheNight(monsList, eqList);
     }
     
     public static void surviveTheNight(Monster[] monsList, Equipment[] eqList){
-        for(int i=0 ; i<monsList.length)
+        for(int i=0 ; i<monsList.length ; i++){
+            System.out.println("Monster List: " + monsList[i].toString());
+        }
     }
 }

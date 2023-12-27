@@ -29,7 +29,7 @@ public class FreddyHouse {
         Bonnie bonnie = new Bonnie();
         Fazbear fazbear = new Fazbear();
         Foxy foxy = new Foxy();
-        
+        System.out.println("\nMonster:");
         chica.useUniqueAbility();
         bonnie.useUniqueAbility();
         fazbear.useUniqueAbility();
