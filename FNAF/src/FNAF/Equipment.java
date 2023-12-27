@@ -37,5 +37,24 @@ class CloseDoor extends Equipment{
 }
 
 class Charachter extends Equipment{
-    
+    public boolean useEquipment(String equipmentName , Monster monster){
+        if(equipmentName.equalsIgnoreCase("Flashlight"))
+            battery -= monster.getBatteryReduction();
+        
+        else if(equipmentName.equalsIgnoreCase("closedoor"))    
+            doorUses--;
+        
+        else{
+            battery -= monster.getBatteryReduction();
+            doorUses--;
+        }
+        
+        if(monster.toString().equals("Foxy") || monster.toString().equals("Chica") || battery<0)
+            return false;
+        if(monster.toString().equals("Bonnie") || monster.toString().equals("Chica") || doorUses<0)
+            return false;
+        if(monster.toString().equals("Fazbear") || doorUses<0 && battery<0)
+            return false;
+        return true;
+    }
 }
