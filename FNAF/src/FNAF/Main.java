@@ -1,14 +1,12 @@
 package FNAF;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author Ezra
- */
 public class Main {
-    
+    public static void main(String[] args) {
+        Flashlight f = new Flashlight();
+        CloseDoor cd = new CloseDoor();
+        Charachter c = new Charachter();
+        Equipment[] eqList = c.createEquipment(f,cd);
+        c.equipmentList();
+        
+    }
 }

@@ -1,15 +1,15 @@
 package FNAF;
 
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author Ezra
- */
-public class Bonnie {
+public class Bonnie extends Monster{
+    public void useUniqueAbility(){
+        System.out.println("Bonnie can only be blocked by flashlight.");
+    }
     
+    public int getBatteryReduction(){
+        return 1; 
+    }
+    
+    public String toString(){
+        return "Bonnie";
+    }
 }
