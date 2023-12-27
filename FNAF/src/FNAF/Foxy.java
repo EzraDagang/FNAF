@@ -2,14 +2,14 @@ package FNAF;
 
 public class Foxy extends Monster{
     public void useUniqueAbility(){
-        System.out.println("Bonnie can be blocked by flashlight or close door");
+        System.out.println("Foxy can only be blokced by close door.");
     }
     
     public int getBatteryReduction(){
-        return 1; 
+        return 0; 
     }
     
     public String toString(){
-        return "Fazbear";
+        return "Foxy";
     }
 }
