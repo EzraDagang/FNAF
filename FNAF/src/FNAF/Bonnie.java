@@ -6,7 +6,7 @@ public class Bonnie extends Monster{
     }
     
     public int getBatteryReduction(){
-        return 1; 
+        return 7; 
     }
     
     public String toString(){
