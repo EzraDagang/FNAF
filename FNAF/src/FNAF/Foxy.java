@@ -2,7 +2,7 @@ package FNAF;
 
 public class Foxy extends Monster{
     public void useUniqueAbility(){
-        System.out.println("Foxy can only be blokced by close door.");
+        System.out.println("Foxy can only be blocked by close door.");
     }
     
     public int getBatteryReduction(){

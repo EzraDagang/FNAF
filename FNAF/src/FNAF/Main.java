@@ -11,17 +11,37 @@ public class Main {
         
         character.equipmentList();
         
-        FreddyHouse freddyHouse = new FreddyHouse(8);
+        FreddyHouse freddyHouse = new FreddyHouse(15);
         Monster[] monsList = freddyHouse.createMonster();
         freddyHouse.printMonsterAndAbilities();
         
-        surviveTheNight(monsList, eqList);
+        if(surviveTheNight(monsList, eqList, character)){
+            System.out.println("Congrats !! You survive the night!!");
+        }
+        else
+            System.out.println("Boohoo You DIED :(");
     }
     
-    public static void surviveTheNight(Monster[] monsList, Equipment[] eqList){
+    public static boolean surviveTheNight(Monster[] monsList, Equipment[] eqList, Charachter character){
+        String choice;
+        boolean alive = true;
         for(int i=0 ; i<monsList.length ; i++){
-            System.out.println("Monster List: " + monsList[i].toString());   
+            System.out.println("Monster List " + (i+1) + " : " + monsList[i].toString());   
         }
+        
+        for(int i=0 ; i<monsList.length ; i++){
+            System.out.println("\nround 1: " + monsList[i].toString());
+            System.out.println("flashlight: " + (eqList[0].battery>=0? eqList[0].battery : 0));
+            System.out.println("close door: " + (eqList[1].doorUses>=0? eqList[1].doorUses : 0));
+            choice = options();
+            alive = character.useEquipment(choice, monsList[i]);
+            if(!alive){
+                return alive;
+            }
+            System.out.println("flashlight: " + (eqList[0].battery>=0? eqList[0].battery : 0));
+            System.out.println("close door: " + (eqList[1].doorUses>=0? eqList[1].doorUses : 0));
+        }
+        return alive;
     }
     
     public static String options(){

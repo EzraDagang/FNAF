@@ -34,5 +34,6 @@ public class FreddyHouse {
         bonnie.useUniqueAbility();
         fazbear.useUniqueAbility();
         foxy.useUniqueAbility();
+        System.out.println();
     }
 }
